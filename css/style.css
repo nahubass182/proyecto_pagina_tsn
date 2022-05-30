@@ -23,7 +23,7 @@ body{
     list-style: none;
 }
 .nav-menu li{
-    padding: 12px 26px;
+    padding: 10px 26px;
 }
 .menu-icon img{
     width: 30px;
@@ -361,5 +361,45 @@ body{
     }
     .articulohistoria{
         display: flex;
+    }
+}
+.btn_neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn_neon:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+}
+.animacion1{
+    display: flex;
+    justify-content: center;
+}
+.textogradiante{
+    background: linear-gradient(to right, blue, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.copy{
+    background: black;
+    width: 400px;
+    height: 50px;
+    animation: skew 3s infinite;
+    transform: skew(8deg);
+    animation-direction: alternate;
+}
+@keyframes skew{
+    0%{
+        transform: skew(8deg, 8deg);
+    }
+    100%{
+        transform: skew(-8deg, -8deg);
     }
 }
