@@ -141,6 +141,7 @@ body{
     grid-template-columns: 30vw 10vw 10vw 10vw 10vw 30vw;
     grid-template-rows: 100px 100px 100px;
     text-align: center;
+    justify-content: center;
 }
 .face{
     grid-column: 2 / 3;
@@ -362,4 +363,7 @@ body{
     .articulohistoria{
         display: flex;
     }
+}
+.tituloredesbanda{
+    justify-content: center;
 }
