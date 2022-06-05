@@ -66,7 +66,7 @@ body{
 /* fechas recitales */
 .fechas{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     padding: 10px;
     color: white;
 }
@@ -87,7 +87,7 @@ body{
 /* historia de la banda */
 .historia{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 00px;
     background-color: white;
 }
 /* formulario */
@@ -287,7 +287,7 @@ body{
     }
     /* fechas */
     .fechas{
-        font-size: 40px;
+        font-size: 35px;
     }
     /* logos footer media */
     .logos{
@@ -363,7 +363,47 @@ body{
     .articulohistoria{
         display: flex;
     }
+    /* botonon media */
+    .animacion1{
+        display: flex;
+        justify-content: end;
+    }
 }
 .tituloredesbanda{
     justify-content: center;
+}
+/* boton neon animacion */
+.btn_neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn_neon:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+}
+.animacion1{
+    display: flex;
+    justify-content: center;
+}
+.copy{
+    background: black;
+    width: 500px;
+    height: 50px;
+    animation: skew 3s infinite;
+    transform: skew(7deg);
+    animation-direction: alternate;
+}
+@keyframes skew{
+    0%{
+        transform: skew(7deg, 7deg);
+    }
+    100%{
+        transform: skew(-7deg, -7deg);
+    }
 }
