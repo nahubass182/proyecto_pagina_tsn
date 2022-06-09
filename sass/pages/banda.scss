@@ -1,0 +1,16 @@
+/* flex integrantes */
+.grid-integrantes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 100px;
+    margin: 80px 25px;
+}
+
+/* integrantes banda */
+.integrantes__fondo{
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
