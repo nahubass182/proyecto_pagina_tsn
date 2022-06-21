@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("../font/Rocks Personal Use.ttf");
 /* media queries paginas */
 @media (max-width: 1024px) {
   /* menu media */
@@ -116,6 +115,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: block; }
+
+@font-face {
+  font-family: "mifuente";
+  src: url(../font/Rocks.png); }
 
 .mifuente {
   font-family: "mifuente";
