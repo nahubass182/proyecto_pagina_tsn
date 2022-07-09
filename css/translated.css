@@ -1,9 +1,62 @@
 @charset "UTF-8";
-/* media queries paginas */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+body {
+  background-image: url(../image/fondopaginaweb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block; }
+
+.mifuente {
+  font-family: cursive;
+  font-size: 60px;
+  background-color: darkgray;
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 2px 1px;
+  border-style: groove;
+  border-color: black; }
+
+/* menu */
+.header {
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none; }
+
+.nav-menu li {
+  padding: 12px 26px; }
+
+.menu-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px; }
+
+.menu-icon, #check {
+  display: none; }
+
+.menu__lista {
+  font-family: fantasy;
+  font-size: 50px;
+  color: black;
+  text-decoration: none; }
+
 @media (max-width: 1024px) {
   /* menu media */
   .checkbtn {
     display: block; }
+  .menu__lista {
+    font-size: 30px; }
   .menu-icon {
     display: block;
     position: fixed;
@@ -25,135 +78,26 @@
     justify-content: center;
     margin: 0; }
   #check:checked ~ ul {
-    left: 0; }
-  .logo {
-    height: 200px; }
-  /* disco nuevo media */
-  .grid-disconuevo {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 100px 200px 200px 100px; }
-  .titulodisco {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3; }
-  .logocd {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4; }
-  .musicacd {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5; }
-  .logodisco {
-    height: 200px; }
-  /* fechas */
-  .fechas {
-    font-size: 40px; }
-  /* logos footer media */
-  .logos {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 150px 25px 25px 25px 25px 100px; }
-  .face {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3; }
-  .spotify {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4; }
-  .youtube {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5; }
-  .insta {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6; }
-  .copy {
-    grid-column: 1 / 2;
-    grid-row: 6 / 7;
-    color: white; }
-  .logos__redes {
-    height: 20px; }
-  /* integrantes media */
-  .grid-integrantes {
-    display: flex;
-    padding: 0; }
-  /* videos media */
-  .grid-videos {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 100px 200px 400px 400px 400px; }
-  .titulovideos {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3; }
-  .video1 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4; }
-  .video2 {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5; }
-  .video3 {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6; }
-  /* formulario media */
-  .grid-formulario {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 100px 200px 400px; }
-  .tituloconsulta {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3; }
-  .gridformulario {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4; }
-  .articulohistoria {
-    display: flex; } }
+    left: 0; } }
 
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none; }
-
-body {
-  background-image: url(../image/fondopaginaweb.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block; }
-
-@font-face {
-  font-family: "mifuente";
-  src: url(../font/Rocks.png); }
-
-.mifuente {
-  font-family: "mifuente";
-  font-size: 70px;
-  background-color: darkgray;
+/* boton neon animacion */
+.btn_neon {
+  position: relative;
   display: inline-block;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  margin: 2px 1px;
-  border-style: groove;
-  border-color: black; }
+  padding: 15px 30px;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s; }
 
-/* menu */
-.header {
-  background-color: darkgray;
+.btn_neon:hover {
+  background: #a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7; }
+
+.animacion1 {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .header .nav-menu ul {
-    display: flex;
-    align-items: center;
-    list-style: none; }
-  .header .nav-menu li {
-    padding: 12px 26px; }
-  .header .menu-icon img {
-    width: 30px;
-    height: 30px;
-    border-radius: 2px; }
-  .header .menu-icon, .header #check {
-    display: none; }
-  .header .menu__lista {
-    font-family: "mifuente";
-    font-size: 50px;
-    color: black; }
+  justify-content: center; }
 
 /* logos del footer */
 .logos__redes {
@@ -182,12 +126,21 @@ body {
     grid-row: 3 / 4;
     color: white; }
 
+@media (max-width: 1024px) {
+  .logos__redes {
+    height: 20px; } }
+
 /* logo pagina principal */
 .primerlogos {
   display: flex;
   justify-content: center; }
-  .primerlogos .logo {
-    height: 500px; }
+
+.logo {
+  height: 500px; }
+
+@media (max-width: 1024px) {
+  .logo {
+    height: 200px; } }
 
 /* tamaño logo disco */
 .logodisco {
@@ -200,15 +153,18 @@ body {
   grid-template-rows: 100px 200px 400px;
   text-align: center;
   align-items: center; }
-  .grid-disconuevo .titulodisco {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3; }
-  .grid-disconuevo .logocd {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4; }
-  .grid-disconuevo .musicacd {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4; }
+
+.titulodisco {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3; }
+
+.logocd {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4; }
+
+.musicacd {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4; }
 
 /* fechas recitales */
 .fechas {
@@ -223,12 +179,36 @@ body {
   grid-template-columns: 35vw 30vw 35vw;
   grid-template-rows: 100px 200px 400px;
   text-align: center; }
-  .grid-fechas .grid-shows {
-    grid-column: 2 / 3;
+
+.grid-shows {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3; }
+
+.fechas {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4; }
+
+@media (max-width: 1024px) {
+  .grid-disconuevo {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px 200px 200px 100px; }
+  .titulodisco {
+    grid-column: 1 / 2;
     grid-row: 2 / 3; }
-  .grid-fechas .fechas {
-    grid-column: 2 / 3;
+  .logocd {
+    grid-column: 1 / 2;
     grid-row: 3 / 4; }
+  .musicacd {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5; }
+  .logodisco {
+    height: 170px; }
+  /* fechas */
+  .fechas {
+    font-size: 50px;
+    position: absolute;
+    top: 200%; } }
 
 /* flex integrantes */
 .grid-integrantes {
@@ -257,6 +237,15 @@ body {
 .dos {
   background-color: #E67E22; }
 
+@media (max-width: 1024px) {
+  .grid-integrantes {
+    display: flex;
+    padding: 0; }
+  .integrantes__fondo {
+    background-color: black;
+    color: white;
+    font-size: 30px; } }
+
 /* historia de la banda */
 .historia {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -274,6 +263,12 @@ body {
 
 .titulohistoria {
   padding: 50px; }
+
+@media (max-width: 1024px) {
+  .mifuente {
+    font-size: 30px; }
+  .historia {
+    font-size: 15px; } }
 
 /* grid videos tsn */
 .grid-videos {
@@ -301,6 +296,24 @@ body {
   grid-column: 1 / 3;
   grid-row: 4 / 5; }
 
+@media (max-width: 1024px) {
+  .grid-videos {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px 200px 400px 400px 400px; }
+  .titulovideos {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+  .video1 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; }
+  .video2 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5; }
+  .video3 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6; } }
+
 /* formulario */
 .formulario__opciones {
   display: flex;
@@ -315,14 +328,12 @@ body {
 .grid-formulario {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 100px 200px 400px;
+  grid-template-rows: 100px 200px 400px 100px;
   text-align: center;
   justify-content: center; }
-
-.tituloconsulta {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3; }
-
-.gridformulario {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4; }
+  .grid-formulario .tituloconsulta {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+  .grid-formulario .gridformulario {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; }

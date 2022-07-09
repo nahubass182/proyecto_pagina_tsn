@@ -13,7 +13,17 @@
     text-align: center;
     padding: 100px 100px;
     margin: 80px 25px;
-}
-.titulohistoria{
-    padding: 50px;
-}
+    }
+    .titulohistoria{
+        padding: 50px;
+    }
+
+    @media (max-width: 1024px){
+        .mifuente{
+            font-size: 30px;
+        }
+        .historia{
+            font-size: 15px;
+        }
+    }
+
